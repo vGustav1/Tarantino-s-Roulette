@@ -1,0 +1,910 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
+
+
+body {
+    background-color: #0a0a0a !important;
+    margin: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+a {
+    color: #f89d13 !important;
+    font-family: "Cinzel", serif;
+}
+
+header {
+    background-color: #8f1d14 !important;
+    padding: 15px 30px;
+}
+
+footer {
+    background-color: #8f1d14 !important;
+    padding: 15px 20px;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: #f89d13 !important;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+
+.linha-pequena,
+.linha-grande {
+    font-family: 'Cinzel', serif;
+    color: #f4c542;
+    letter-spacing: 5px;
+}
+
+.linha-pequena {
+    font-size: 22px;
+    text-shadow: 2px 2px 0 #d35400, -1px -1px 0 #d35400;
+}
+
+.linha-grande {
+    text-shadow: 3px 3px 0 #d35400, -2px -2px 0 #d35400;
+}
+
+.section-cards {
+    background: #0a0a0a;
+    padding: 6rem 2rem;
+}
+
+.section-cards-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+
+.qt-card {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #8f1d14;
+    border-radius: 4px;
+    background: #0a0a0a;
+    cursor: pointer;
+    transition: border-color 0.3s, transform 0.3s;
+    min-height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.qt-card:hover {
+    border-color: #f89d13;
+    transform: translateY(-5px);
+}
+
+.qt-card-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center top;
+    opacity: 0.22;
+    transition: opacity 0.4s;
+}
+
+.qt-card:hover .qt-card-bg {
+    opacity: 0.38;
+}
+
+.qt-card-vignette {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, #0a0a0a 45%, transparent 100%);
+}
+
+.qt-card-body {
+    position: relative;
+    z-index: 2;
+    padding: 2.5rem;
+}
+
+.qt-card-eyebrow {
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    letter-spacing: 5px;
+    color: #8f1d14 !important;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.qt-card-title {
+    font-family: 'Cinzel', serif;
+    font-size: 1.8rem !important;
+    font-weight: 900;
+    color: #f4c542 !important;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 0.8rem;
+    line-height: 1.15;
+    text-shadow: 2px 2px 0 #d35400, -1px -1px 0 #d35400;
+}
+
+.qt-card-desc {
+    font-family: 'Cinzel', serif;
+    font-size: 0.78rem;
+    color: rgba(255, 255, 255, 0.45) !important;
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+    max-width: 400px;
+}
+
+.qt-card-meta {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.qt-meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.qt-meta-label {
+    font-size: 9px;
+    letter-spacing: 3px;
+    color: #8f1d14 !important;
+    text-transform: uppercase;
+    font-family: 'Cinzel', serif;
+}
+
+.qt-meta-value {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #f89d13 !important;
+    font-family: 'Cinzel', serif;
+}
+
+.qt-card-divider {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #8f1d14, transparent);
+    margin-bottom: 1.5rem;
+}
+
+.qt-card-btn {
+    display: inline-block;
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #f89d13 !important;
+    border: 1px solid #f89d13;
+    padding: 12px 28px;
+    background: transparent;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    text-decoration: none !important;
+}
+
+.qt-card:hover .qt-card-btn {
+    background: #f89d13;
+    color: #0a0a0a !important;
+}
+
+.qt-card-corner {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 28px;
+    height: 28px;
+    z-index: 3;
+    opacity: 0.5;
+}
+
+.qt-card-corner::before,
+.qt-card-corner::after {
+    content: '';
+    position: absolute;
+    background: #f89d13;
+}
+
+.qt-card-corner::before {
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 28px;
+}
+
+.qt-card-corner::after {
+    top: 0;
+    right: 0;
+    width: 28px;
+    height: 1px;
+}
+
+.qt-card-corner-bl {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    width: 28px;
+    height: 28px;
+    z-index: 3;
+    opacity: 0.5;
+}
+
+.qt-card-corner-bl::before,
+.qt-card-corner-bl::after {
+    content: '';
+    position: absolute;
+    background: #f89d13;
+}
+
+.qt-card-corner-bl::before {
+    bottom: 0;
+    left: 0;
+    width: 1px;
+    height: 28px;
+}
+
+.qt-card-corner-bl::after {
+    bottom: 0;
+    left: 0;
+    width: 28px;
+    height: 1px;
+}
+
+
+
+.section-roleta {
+    background: #0a0a0a;
+    padding: 5rem 0 7rem;
+}
+
+.rollete-title h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 2.2rem;
+    letter-spacing: 4px;
+    color: #f4c542 !important;
+    text-shadow: 2px 2px 0 #d35400;
+}
+
+.roleta-wrapper {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    position: relative;
+}
+
+.roleta-ponteiro {
+    z-index: 10;
+    font-size: 2.5rem;
+    margin-top: -30px;
+    filter: drop-shadow(0 0 8px #f89d13);
+}
+
+.roleta-viewport {
+    width: 100%;
+    height: 280px;
+    box-shadow: inset 0 0 40px rgba(248, 157, 19, 0.15),
+        0 0 60px rgba(0, 0, 0, 0.8);
+    border-left: none !important;
+    border-right: none !important;
+    border-radius: 0 !important;
+    position: relative;
+    overflow: hidden;
+}
+
+#roleta-track {
+    transition: transform 5s cubic-bezier(0.1, 1, 0.1, 1);
+    will-change: transform;
+    padding-left: 0 !important;
+    justify-content: flex-start !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.roleta-item {
+    flex-shrink: 0;
+    display: block;
+}
+
+.roleta-item.vencedor {
+    border-color: #f89d13 !important;
+    box-shadow: 0 0 20px #f89d13;
+    transform: scale(1.07);
+}
+
+
+.roleta-viewport::before,
+.roleta-viewport::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: rgba(248, 157, 19, 0.25);
+    z-index: 5;
+    pointer-events: none;
+}
+
+.roleta-viewport::before {
+    left: 50%;
+    transform: translateX(-75px);
+}
+
+.roleta-viewport::after {
+    left: 50%;
+    transform: translateX(73px);
+}
+
+.roleta-fade-left,
+.roleta-fade-right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 180px;
+    z-index: 4;
+    pointer-events: none;
+}
+
+.roleta-fade-left {
+    left: 0;
+    background: linear-gradient(to right, #0a0a0a, transparent);
+}
+
+.roleta-fade-right {
+    right: 0;
+    background: linear-gradient(to left, #0a0a0a, transparent);
+}
+
+
+#btn-sortear {
+    font-family: 'Cinzel', serif;
+    font-size: 1rem;
+    letter-spacing: 5px;
+    padding: 1rem 4rem;
+    border-radius: 0;
+    background: transparent !important;
+    color: #f89d13 !important;
+    border: 1px solid #f89d13 !important;
+    transition: background 0.2s, color 0.2s;
+}
+
+#btn-sortear:hover:not(:disabled) {
+    background: #f89d13 !important;
+    color: #0a0a0a !important;
+}
+
+#btn-sortear:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.poster {
+    height: 17rem;
+}
+
+.filme-card {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #8f1d14;
+    border-radius: 4px;
+    background: #0a0a0a;
+    cursor: pointer;
+    transition: border-color 0.3s, transform 0.3s;
+    aspect-ratio: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.filme-card:hover {
+    border-color: #f89d13;
+    transform: translateY(-6px);
+}
+
+.filme-card-poster {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    transition: transform 0.5s, opacity 0.4s;
+    opacity: 0.85;
+}
+
+.filme-card:hover .filme-card-poster {
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+.filme-card-vignette {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, #0a0a0a 30%, rgba(0, 0, 0, 0.2) 70%, transparent 100%);
+    transition: opacity 0.3s;
+}
+
+.filme-card:hover .filme-card-vignette {
+    background: linear-gradient(to top, #0a0a0a 40%, rgba(0, 0, 0, 0.4) 70%, transparent 100%);
+}
+
+.filme-card-body {
+    position: relative;
+    z-index: 2;
+    padding: 1.2rem 1.2rem 1rem;
+}
+
+.filme-card-title {
+    font-family: 'Cinzel', serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #f4c542 !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+    text-shadow: 1px 1px 0 #d35400;
+}
+
+.filme-card-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-family: 'Cinzel', serif;
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.5) !important;
+    letter-spacing: 1px;
+}
+
+.filme-card-meta span {
+    color: #f89d13 !important;
+    font-weight: 700;
+}
+
+.filme-card-meta .separador {
+    color: #8f1d14 !important;
+    font-weight: 400;
+}
+
+.filme-card-corner {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    z-index: 3;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.filme-card:hover .filme-card-corner {
+    opacity: 0.8;
+}
+
+.filme-card-corner::before,
+.filme-card-corner::after {
+    content: '';
+    position: absolute;
+    background: #f89d13;
+}
+
+.filme-card-corner::before {
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 20px;
+}
+
+.filme-card-corner::after {
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 1px;
+}
+
+
+.bio-carousel {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background: #000;
+}
+
+.bio-carousel .carousel-inner,
+.bio-carousel .carousel-item {
+    height: 520px;
+}
+
+.bio-carousel .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+}
+
+.bio-carousel::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 120px;
+    background: linear-gradient(to bottom, transparent, #0a0a0a);
+    pointer-events: none;
+    z-index: 5;
+}
+
+.bio-carousel .carousel-control-prev,
+.bio-carousel .carousel-control-next {
+    z-index: 10;
+    width: 60px;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+}
+
+.bio-carousel .carousel-control-prev:hover,
+.bio-carousel .carousel-control-next:hover {
+    opacity: 1;
+}
+
+.bio-carousel .carousel-indicators [data-bs-target] {
+    background-color: #f89d13;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: none;
+    opacity: 0.4;
+}
+
+.bio-carousel .carousel-indicators .active {
+    opacity: 1;
+}
+
+.bio-section {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 5rem 2rem 6rem;
+}
+
+.bio-eyebrow {
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    letter-spacing: 5px;
+    color: #8f1d14;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.bio-titulo {
+    font-family: 'Cinzel', serif;
+    font-size: 2.4rem;
+    font-weight: 900;
+    color: #f4c542 !important;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 0 #d35400, -1px -1px 0 #d35400;
+    margin-bottom: 0.4rem;
+    line-height: 1.15;
+}
+
+.bio-subtitulo {
+    font-family: 'Cinzel', serif;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.35) !important;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;
+}
+
+.bio-divider {
+    width: 80px;
+    height: 2px;
+    background: linear-gradient(to right, #8f1d14, #f89d13);
+    margin-bottom: 2.5rem;
+}
+
+
+.bio-texto {
+    font-family: 'Cinzel', serif;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.65) !important;
+    line-height: 2;
+    margin-bottom: 1.5rem;
+}
+
+.bio-destaque {
+    border-left: 2px solid #8f1d14;
+    padding-left: 1.5rem;
+    margin: 2.5rem 0;
+    font-family: 'Cinzel', serif;
+    font-size: 1rem;
+    color: #f89d13 !important;
+    font-style: italic;
+    line-height: 1.8;
+}
+
+/* ── DETALHES DOS FILMES ──────────────────────────────────────────────── */
+.filme-hero {
+    position: relative;
+    min-height: 520px;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.filme-hero-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center 20%;
+    filter: blur(6px) brightness(0.35);
+    transform: scale(1.05);
+}
+
+.filme-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, #0a0a0a 15%, transparent 70%);
+}
+
+.filme-hero-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    gap: 3rem;
+    align-items: flex-end;
+    padding: 3rem 4rem 4rem;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.filme-hero-poster {
+    flex-shrink: 0;
+}
+
+.filme-hero-poster img {
+    width: 200px;
+    border-radius: 4px;
+    border: 1px solid #8f1d14;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.8);
+}
+
+.filme-hero-info {
+    flex: 1;
+    padding-bottom: 0.5rem;
+}
+
+.filme-titulo {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    font-weight: 900;
+    color: #f4c542 !important;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 0 #d35400, -1px -1px 0 #d35400;
+    margin-bottom: 0.8rem;
+    line-height: 1.1;
+}
+
+.filme-meta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-family: 'Cinzel', serif;
+    font-size: 0.78rem;
+}
+
+.filme-meta-item {
+    color: rgba(255, 255, 255, 0.65) !important;
+    letter-spacing: 1px;
+}
+
+.filme-meta-sep {
+    color: #8f1d14 !important;
+}
+
+.filme-generos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.2rem;
+}
+
+.filme-genero-tag {
+    font-family: 'Cinzel', serif;
+    font-size: 9px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #f89d13 !important;
+    border: 1px solid #8f1d14;
+    padding: 4px 10px;
+    border-radius: 2px;
+}
+
+.filme-sinopse {
+    font-family: 'Cinzel', serif;
+    font-size: 0.82rem;
+    color: rgba(255, 255, 255, 0.55) !important;
+    line-height: 1.9;
+    max-width: 680px;
+    margin-bottom: 0;
+}
+
+/* ── ELENCO ────────────────────────────────────────────── */
+.elenco-section {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 4rem 4rem 3rem;
+}
+
+.elenco-header {
+    margin-bottom: 2.5rem;
+}
+
+.elenco-titulo {
+    font-family: 'Cinzel', serif;
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: #f4c542 !important;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 0 #d35400;
+    margin-bottom: 1rem;
+}
+
+.bio-divider {
+    width: 80px;
+    height: 2px;
+    background: linear-gradient(to right, #8f1d14, #f89d13);
+}
+
+/* ── CARD DO ATOR ──────────────────────────────────────── */
+.ator-card {
+    background: #0a0a0a;
+    border: 1px solid #1a1a1a;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: border-color 0.3s, transform 0.3s;
+}
+
+.ator-card:hover {
+    border-color: #8f1d14;
+    transform: translateY(-4px);
+}
+
+.ator-foto-wrap {
+    position: relative;
+    aspect-ratio: 3/4;
+    overflow: hidden;
+}
+
+.ator-foto {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    transition: transform 0.4s;
+    display: block;
+}
+
+.ator-card:hover .ator-foto {
+    transform: scale(1.05);
+}
+
+.ator-papel-badge {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(143, 29, 20, 0.95), transparent);
+    font-family: 'Cinzel', serif;
+    font-size: 8px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #f4c542;
+    padding: 1.5rem 0.6rem 0.5rem;
+    text-align: center;
+}
+
+.ator-info {
+    padding: 0.8rem;
+}
+
+.ator-nome {
+    font-family: 'Cinzel', serif;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: #f89d13 !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.2rem;
+}
+
+.ator-personagem {
+    font-family: 'Cinzel', serif;
+    font-size: 0.68rem;
+    color: rgba(255, 255, 255, 0.4) !important;
+    letter-spacing: 0.5px;
+    font-style: italic;
+}
+
+
+.qt-card-eyebrow {
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    letter-spacing: 5px;
+    color: #8f1d14 !important;
+    text-transform: uppercase;
+    margin-bottom: 0.4rem;
+}
+
+.qt-card-btn {
+    display: inline-block;
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #f89d13 !important;
+    border: 1px solid #f89d13;
+    padding: 12px 28px;
+    background: transparent;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    text-decoration: none !important;
+}
+
+.qt-card-btn:hover {
+    background: #f89d13;
+    color: #0a0a0a !important;
+}
+
+
+
+@media (max-width: 768px) {
+    .section-cards-inner {
+        grid-template-columns: 1fr;
+    }
+
+    .qt-card {
+        min-height: 320px;
+    }
+
+    .qt-card-title {
+        font-size: 1.3rem !important;
+    }
+
+    .roleta-viewport {
+        height: 200px;
+    }
+
+    .rollete-title h2 {
+        font-size: 1.4rem;
+    }
+
+    .filme-hero-content {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2rem 1.5rem 3rem;
+        gap: 1.5rem;
+    }
+
+    .filme-hero-poster img {
+        width: 140px;
+    }
+
+    .elenco-section {
+        padding: 3rem 1.5rem 2rem;
+    }
+
+}

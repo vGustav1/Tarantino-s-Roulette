@@ -1,18 +1,365 @@
 {
-  "usuarios": [
+  "filmes": [
     {
-      "id": "187cb7e5-e097-4224-8bc7-b610c855e2b1",
-      "login": "admin",
-      "senha": "123",
-      "nome": "Administrador do Sistema",
-      "email": "admin@abc.com"
+      "id": 1,
+      "nome": "Kill Bill: Volume 1",
+      "sinopse": "A ex-assassina conhecida apenas como A Noiva acorda de um coma de quatro anos decidida a se vingar de Bill, seu ex-amante e chefe, que tentou matá-la no dia do casamento. Ela está motivada a acertar as contas com cada uma das pessoas envolvidas com a perda da filha, da festa de casamento e dos quatro anos da sua vida. Na jornada, A Noiva é submetida a dores físicas agoniantes ao enfrentar a inescrupulosa gangue de Bill, o Esquadrão Assassino de Víboras Mortais.",
+      "lancamento": "23/04/2004",
+      "genero": ["Ação", "Crime", "Suspense"],
+      "duracao": "1h 51m",
+      "avaliacao": "8,2",
+      "classificacaoIndicativa": "18 anos",
+      "posterUrl": "assets/img/posters/killbill1.jpg"
     },
     {
-      "id": "ec37c83d-4b7f-458d-9e10-3fda7d37cd3e",
-      "login": "user",
-      "senha": "123",
-      "nome": "Usuario Comum",
-      "email": "user@abc.com"
+      "id": 2,
+      "nome": "Kill Bill: Volume 2",
+      "sinopse": "A Noiva continua sua busca por vingança contra os assassinos remanescentes de seu antigo grupo e se prepara para o confronto final com seu ex-chefe e amante, Bill.",
+      "lancamento": "09/10/2004",
+      "genero": ["Ação", "Crime", "Faroeste"],
+      "duracao": "2h 17m",
+      "avaliacao": "8,0",
+      "classificacaoIndicativa": "16 anos",
+      "posterUrl": "assets/img/posters/killbill2.jpg"
+    },
+    {
+      "id": 3,
+      "nome": "Bastardos Inglórios",
+      "sinopse": "Na França ocupada pelos nazistas durante a Segunda Guerra Mundial, um grupo de soldados judeus-americanos conhecidos como 'Os Bastardos' planeja assassinar os líderes do Terceiro Reich em uma estreia de cinema em Paris.",
+      "lancamento": "09/10/2009",
+      "genero": ["Ação", "Drama", "Guerra"],
+      "duracao": "2h 33m",
+      "avaliacao": "8,4",
+      "classificacaoIndicativa": "18 anos",
+      "posterUrl": "assets/img/posters/inglouriousbasterds.jpg"
+    },
+    {
+      "id": 4,
+      "nome": "Pulp Fiction: Tempo de Violência",
+      "sinopse": "As vidas de dois assassinos profissionais, do gângster que os chefia e de sua esposa, de um pugilista pago para perder uma luta e de um casal de assaltantes se entrelaçam em quatro histórias de violência e redenção.",
+      "lancamento": "03/03/1995",
+      "genero": ["Crime", "Drama"],
+      "duracao": "2h 34m",
+      "avaliacao": "8,9",
+      "classificacaoIndicativa": "18 anos",
+      "posterUrl": "assets/img/posters/pulpfiction.jpg"
+    },
+    {
+      "id": 5,
+      "nome": "Jackie Brown",
+      "sinopse": "Uma comissária de bordo que trafica dinheiro para um contrabandista de armas é pega por agentes federais. Para evitar a prisão, ela elabora um plano audacioso para enganar tanto a polícia quanto o criminoso.",
+      "lancamento": "06/03/1998",
+      "genero": ["Crime", "Drama", "Suspense"],
+      "duracao": "2h 34m",
+      "avaliacao": "7,5",
+      "classificacaoIndicativa": "18 anos",
+      "posterUrl": "assets/img/posters/jackiebrown.jpg"
+    },
+    {
+      "id": 6,
+      "nome": "Cães de Aluguel",
+      "sinopse": "Após um roubo de diamantes dar errado, um grupo de criminosos que não se conhecem pelos nomes verdadeiros se reúne em um armazém abandonado, suspeitando que há um informante da polícia entre eles.",
+      "lancamento": "12/03/1993",
+      "genero": ["Crime", "Suspense"],
+      "duracao": "1h 39m",
+      "avaliacao": "8,3",
+      "classificacaoIndicativa": "18 anos",
+      "posterUrl": "assets/img/posters/reservoirdogs.jpg"
+    },
+    {
+      "id": 7,
+      "nome": "À Prova de Morte",
+      "sinopse": "Um dublê psicopata que usa seu carro 'à prova de morte' para perseguir e assassinar mulheres jovens encontra um grupo de mulheres destemidas que decide revidar à altura.",
+      "lancamento": "16/07/2010",
+      "genero": ["Ação", "Suspense"],
+      "duracao": "1h 54m",
+      "avaliacao": "7,0",
+      "classificacaoIndicativa": "16 anos",
+      "posterUrl": "assets/img/posters/deathproof.jpg"
+    },
+    {
+      "id": 8,
+      "nome": "Django Livre",
+      "sinopse": "Com a ajuda de um caçador de recompensas alemão, um escravo liberto viaja pelos Estados Unidos para resgatar sua esposa das mãos de um cruel e implacável proprietário de uma plantação no Mississippi.",
+      "lancamento": "18/01/2013",
+      "genero": ["Drama", "Faroeste"],
+      "duracao": "2h 45m",
+      "avaliacao": "8,5",
+      "classificacaoIndicativa": "16 anos",
+      "posterUrl": "assets/img/posters/djangounchained.jpg"
+    },
+    {
+      "id": 9,
+      "nome": "Era uma Vez em... Hollywood",
+      "sinopse": "Um actor de televisão em decadência e seu dublê de longa data tentam alcançar a fama e o sucesso na indústria cinematográfica de Los Angeles de 1969, em meio aos assassinatos cometidos pela Família Manson.",
+      "lancamento": "15/08/2019",
+      "genero": ["Comédia", "Drama"],
+      "duracao": "2h 41m",
+      "avaliacao": "7,6",
+      "classificacaoIndicativa": "16 anos",
+      "posterUrl": "assets/img/posters/onceuponatimeinhollywood.jpg"
+    },
+    {
+      "id": 10,
+      "nome": "Os Oito Odiados",
+      "sinopse": "Durante uma nevasca no Wyoming pós-Guerra Civil, um caçador de recompensas e sua prisioneira encontram refúgio em uma estalagem, onde se deparam com um grupo de figuras suspeitas e perigosas.",
+      "lancamento": "07/01/2016",
+      "genero": ["Drama", "Faroeste", "Mistério"],
+      "duracao": "2h 48m",
+      "avaliacao": "7,8",
+      "classificacaoIndicativa": "18 anos",
+      "posterUrl": "assets/img/posters/thehateful8.jpg"
+    }
+  ],
+  "atores": [
+    {
+      "id": 1,
+      "nome": "Uma Thurman",
+      "fotoUrl": "assets/img/atores/uma-thurman.jpg",
+      "sobre": "Indicada ao Oscar e consagrada como a grande musa de Quentin Tarantino, Uma Thurman imortalizou papéis icônicos na cultura pop, como a enigmática Mia Wallace em Pulp Fiction e a implacável Noiva na franquia de vingança Kill Bill.",
+      "personagens": [
+        { "nome": "Beatrix Kiddo / A Noiva", "filmeId": 1, "papel": "Protagonista" },
+        { "nome": "Beatrix Kiddo / A Noiva", "filmeId": 2, "papel": "Protagonista" },
+        { "nome": "Mia Wallace", "filmeId": 4, "papel": "Personagem Marcante" }
+      ]
+    },
+    {
+      "id": 2,
+      "nome": "David Carradine",
+      "fotoUrl": "assets/img/atores/david-carrandine.jpg",
+      "sobre": "Famoso inicialmente pela clássica série de TV Kung Fu nos anos 1970, o ator teve um grande retorno ao estrelato mundial ao interpretar o místico e perigoso Bill na saga Kill Bill.",
+      "personagens": [
+        { "nome": "Bill", "filmeId": 1, "papel": "Vilão" },
+        { "nome": "Bill", "filmeId": 2, "papel": "Vilão / Coadjuvante" }
+      ]
+    },
+    {
+      "id": 3,
+      "nome": "Lucy Liu",
+      "fotoUrl": "assets/img/atores/lucy-liu.jpg",
+      "sobre": "Uma das atrizes asiático-americanas mais influentes de Hollywood, Lucy Liu entregou uma performance memorável em Kill Bill: Vol. 1 como O-Ren Ishii, a chefe da Yakuza.",
+      "personagens": [
+        { "nome": "O-Ren Ishii", "filmeId": 1, "papel": "Vilão" }
+      ]
+    },
+    {
+      "id": 4,
+      "nome": "Vivica A. Fox",
+      "fotoUrl": "assets/img/atores/vivica-fox.jpg",
+      "sobre": "Vivica marcou o cinema ao protagonizar a brutal cena de abertura de Kill Bill como a ex-assassina Vernita Green.",
+      "personagens": [
+        { "nome": "Vernita Green", "filmeId": 1, "papel": "Coadjuvante" }
+      ]
+    },
+    {
+      "id": 5,
+      "nome": "Michael Madsen",
+      "fotoUrl": "assets/img/atores/michael-madsen.jpg",
+      "sobre": "Dono de uma voz rouca marcante e uma presença imponente, Madsen é um dos colaboradores mais antigos de Tarantino, famoso por interpretar criminosos sádicos ou frios.",
+      "personagens": [
+        { "nome": "Budd", "filmeId": 2, "papel": "Vilão" },
+        { "nome": "Sr. Blonde / Vic Vega", "filmeId": 6, "papel": "Personagem Marcante" },
+        { "nome": "Joe Gage", "filmeId": 10, "papel": "Coadjuvante" }
+      ]
+    },
+    {
+      "id": 6,
+      "nome": "Daryl Hannah",
+      "fotoUrl": "assets/img/atores/daryl-hannah.jpg",
+      "sobre": "Estrela de grandes sucessos dos anos 1980, Daryl Hannah viveu um de seus momentos mais marcantes ao interpretar a cruel Elle Driver na franquia Kill Bill.",
+      "personagens": [
+        { "nome": "Elle Driver", "filmeId": 2, "papel": "Vilão" }
+      ]
+    },
+    {
+      "id": 7,
+      "nome": "Brad Pitt",
+      "fotoUrl": "assets/img/atores/brad-pitt.jpg",
+      "sobre": "Um dos maiores astros de sua geração, Brad Pitt venceu o Oscar de Melhor Ator Coadjuvante sob a direção de Tarantino por Era uma Vez em... Hollywood.",
+      "personagens": [
+        { "nome": "Tenente Aldo Raine", "filmeId": 3, "papel": "Protagonista" },
+        { "nome": "Cliff Booth", "filmeId": 9, "papel": "Protagonista" }
+      ]
+    },
+    {
+      "id": 8,
+      "nome": "Christoph Waltz",
+      "fotoUrl": "assets/img/atores/chris-waltz.jpg",
+      "sobre": "O ator austríaco venceu dois Oscars trabalhando com Tarantino, passando do sádico vilão Hans Landa para o carismático herói Dr. Schultz.",
+      "personagens": [
+        { "nome": "Coronel Hans Landa", "filmeId": 3, "papel": "Vilão" },
+        { "nome": "Dr. King Schultz", "filmeId": 8, "papel": "Coadjuvante" }
+      ]
+    },
+    {
+      "id": 9,
+      "nome": "Mélanie Laurent",
+      "fotoUrl": "assets/img/atores/melanie-laurent.jpg",
+      "sobre": "Atriz, diretora e cantora francesa, Mélanie conquistou o público internacional ao dar vida à vingativa Shosanna Dreyfus em Bastardos Inglórios.",
+      "personagens": [
+        { "nome": "Shosanna Dreyfus", "filmeId": 3, "papel": "Protagonista" }
+      ]
+    },
+    {
+      "id": 10,
+      "nome": "John Travolta",
+      "fotoUrl": "assets/img/atores/john-travolta.jpg",
+      "sobre": "Após marcar os anos 1970 com musicais, Travolta teve sua carreira espetacularmente ressuscitada por Tarantino em Pulp Fiction como o carismático Vincent Vega.",
+      "personagens": [
+        { "nome": "Vincent Vega", "filmeId": 4, "papel": "Protagonista" }
+      ]
+    },
+    {
+      "id": 11,
+      "nome": "Samuel L. Jackson",
+      "fotoUrl": "assets/img/atores/samuel-jackson.jpg",
+      "sobre": "O ator que mais vezes colaborou com Quentin Tarantino. Conhecido por sua entrega intensa, entregou atuações lendárias em Pulp Fiction, Jackie Brown e Os Oito Odiados.",
+      "personagens": [
+        { "nome": "Jules Winnfield", "filmeId": 4, "papel": "Protagonista" },
+        { "nome": "Ordell Robbie", "filmeId": 5, "papel": "Vilão" },
+        { "nome": "Major Marquis Warren", "filmeId": 10, "papel": "Protagonista" }
+      ]
+    },
+    {
+      "id": 12,
+      "nome": "Bruce Willis",
+      "fotoUrl": "assets/img/atores/bruce-willis.jpg",
+      "sobre": "Consagrado como um dos maiores heróis de ação do cinema, Willis trouxe seu peso de astro para Pulp Fiction no papel de Butch, o orgulhoso boxeador.",
+      "personagens": [
+        { "nome": "Butch Coolidge", "filmeId": 4, "papel": "Coadjuvante" }
+      ]
+    },
+    {
+      "id": 13,
+      "nome": "Pam Grier",
+      "fotoUrl": "assets/img/atores/pam-grier.jpg",
+      "sobre": "Ícone do cinema Blaxploitation dos anos 1970, Pam Grier foi homenageada por Tarantino ao ser escalada como a protagonista de Jackie Brown.",
+      "personagens": [
+        { "nome": "Jackie Brown", "filmeId": 5, "papel": "Protagonista" }
+      ]
+    },
+    {
+      "id": 14,
+      "nome": "Robert Forster",
+      "fotoUrl": "assets/img/atores/robert-forster.jpg",
+      "sobre": "Com longa carreira no cinema B americano, Forster recebeu sua única indicação ao Oscar interpretando o melancólico agente de fianças Max Cherry em Jackie Brown.",
+      "personagens": [
+        { "nome": "Max Cherry", "filmeId": 5, "papel": "Coadjuvante" }
+      ]
+    },
+    {
+      "id": 15,
+      "nome": "Harvey Keitel",
+      "fotoUrl": "assets/img/atores/harvey-keitel.jpg",
+      "sobre": "Ator fundamental no início da carreira de Tarantino, Keitel não apenas estrelou como também ajudou a financiar Cães de Aluguel.",
+      "personagens": [
+        { "nome": "Winston Wolfe", "filmeId": 4, "papel": "Personagem Marcante" },
+        { "nome": "Sr. White / Larry Dimmick", "filmeId": 6, "papel": "Protagonista" }
+      ]
+    },
+    {
+      "id": 16,
+      "nome": "Tim Roth",
+      "fotoUrl": "assets/img/atores/tim-roth.jpg",
+      "sobre": "O talentoso ator britânico brilhou nos primeiros filmes de Tarantino, especializado em personagens intensos e desesperados.",
+      "personagens": [
+        { "nome": "Pumpkin / Ringo", "filmeId": 4, "papel": "Personagem Marcante" },
+        { "nome": "Sr. Orange / Freddy Newandyke", "filmeId": 6, "papel": "Protagonista" },
+        { "nome": "Oswaldo Mobray", "filmeId": 10, "papel": "Coadjuvante" }
+      ]
+    },
+    {
+      "id": 17,
+      "nome": "Steve Buscemi",
+      "fotoUrl": "assets/img/atores/steve-buscemi.jpg",
+      "sobre": "Reconhecido por figuras excêntricas e neuróticas, Buscemi roubou a cena em Cães de Aluguel como o Sr. Pink.",
+      "personagens": [
+        { "nome": "Sr. Pink", "filmeId": 6, "papel": "Coadjuvante" }
+      ]
+    },
+    {
+      "id": 18,
+      "nome": "Kurt Russell",
+      "fotoUrl": "assets/img/atores/kurt-russel.jpg",
+      "sobre": "Lenda do cinema de ação dos anos 1980, Kurt Russell trouxe seu carisma durão interpretando o sádico Dublê Mike e o implacável John Ruth.",
+      "personagens": [
+        { "nome": "Dublê Mike", "filmeId": 7, "papel": "Vilão / Protagonista" },
+        { "nome": "John 'O Enforcador' Ruth", "filmeId": 10, "papel": "Protagonista" }
+      ]
+    },
+    {
+      "id": 19,
+      "nome": "Rosario Dawson",
+      "fotoUrl": "assets/img/atores/rosario-dawson.jpg",
+      "sobre": "Atriz versátil de forte presença em Hollywood, Rosario liderou o durão grupo de mulheres do segundo ato de À Prova de Morte.",
+      "personagens": [
+        { "nome": "Abernathy Ross", "filmeId": 7, "papel": "Coadjuvante" }
+      ]
+    },
+    {
+      "id": 20,
+      "nome": "Jamie Foxx",
+      "fotoUrl": "assets/img/atores/jamie-foxx.jpg",
+      "sobre": "Vencedor do Oscar, Jamie Foxx entregou uma atuação poderosa em Django Livre, transformando-se de escravo fragilizado em herói implacável.",
+      "personagens": [
+        { "nome": "Django", "filmeId": 8, "papel": "Protagonista" }
+      ]
+    },
+    {
+      "id": 21,
+      "nome": "Leonardo DiCaprio",
+      "fotoUrl": "assets/img/atores/leonardo-dicaprio.jpg",
+      "sobre": "Um dos atores mais aclamados do século, DiCaprio quebrou seu padrão de herói ao interpretar o vilão Calvin Candie em Django Livre e o vulnerável Rick Dalton em Hollywood.",
+      "personagens": [
+        { "nome": "Calvin Candie", "filmeId": 8, "papel": "Vilão" },
+        { "nome": "Rick Dalton", "filmeId": 9, "papel": "Protagonista" }
+      ]
+    },
+    {
+      "id": 22,
+      "nome": "Kerry Washington",
+      "fotoUrl": "assets/img/atores/kerry-washington.jpg",
+      "sobre": "Consagrada na TV mundial, Kerry trouxe carga dramática profunda para Django Livre como Broomhilda, esposa do protagonista.",
+      "personagens": [
+        { "nome": "Broomhilda von Shaft", "filmeId": 8, "papel": "Coadjuvante" }
+      ]
+    },
+    {
+      "id": 23,
+      "nome": "Margot Robbie",
+      "fotoUrl": "assets/img/atores/margot-robbie.jpg",
+      "sobre": "Uma das maiores estrelas do cinema atual, Margot Robbie iluminou a tela em Era uma Vez em... Hollywood como Sharon Tate.",
+      "personagens": [
+        { "nome": "Sharon Tate", "filmeId": 9, "papel": "Coadjuvante" }
+      ]
+    },
+    {
+      "id": 24,
+      "nome": "Austin Butler",
+      "fotoUrl": "assets/img/atores/austin-butley.jpg",
+      "sobre": "Antes de estourar globalmente interpretando Elvis, Butler teve uma participação assustadora em Era uma Vez em... Hollywood como Tex Watson.",
+      "personagens": [
+        { "nome": "Charles 'Tex' Watson", "filmeId": 9, "papel": "Vilão" }
+      ]
+    },
+    {
+      "id": 25,
+      "nome": "Jennifer Jason Leigh",
+      "fotoUrl": "assets/img/atores/jennifer-jason-leigh.jpg",
+      "sobre": "Conhecida por papéis ousados no cinema independente, Jennifer recebeu indicação ao Oscar por sua atuação magnética como a perigosa Daisy Domergue.",
+      "personagens": [
+        { "nome": "Daisy Domergue", "filmeId": 10, "papel": "Vilão / Protagonista" }
+      ]
+    },
+    {
+      "id": 26,
+      "nome": "Walton Goggins",
+      "fotoUrl": "assets/img/atores/walton-goggins.jpg",
+      "sobre": "Mestre em interpretar carismáticos anti-heróis, Goggins rouba a cena em Os Oito Odiados no papel do falastrão Chris Mannix.",
+      "personagens": [
+        { "nome": "Chris Mannix", "filmeId": 10, "papel": "Coadjuvante" }
+      ]
     }
   ]
 }
+
