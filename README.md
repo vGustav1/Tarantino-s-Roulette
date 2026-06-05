@@ -10,15 +10,15 @@ Sugerimos o uso das seguintes ferramentas acessíveis: [FullCalendar](https://fu
 
 ## Informações do trabalho
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome: Gustavo Fernandes Vieira
+- Matricula: 1419487
+- Proposta de projeto escolhida: Uma galeria de filmes.
+- Breve descrição sobre seu projeto: Um site com todos os filmes dirigidos pelo Tarantino, com uma biografia dele, notas dos filmes, roadmaps por nota e ordem cronológica e uma roleta interativa para o usuário sortear o filme que vai assistir.
 
 **Print da tela com a implementação**
 
-<< Coloque aqui uma breve explicação da implementação feita nessa etapa>>
+<< Foi criada uma página de estatísticas utilizando a biblioteca Chart.js, que exibe um gráfico de barras com as notas de todos os filmes do Tarantino, com os dados sendo carregados dinamicamente a partir do arquivo db.json onde o eixo X são os nomes dos filmes e o eixo Y as suas notas.>>
 
-<<  COLOQUE A IMAGEM TELA 1 AQUI >>
+![Print1](public/assets/img/prints/printsemana14.1.png)
 
-<<  COLOQUE A IMAGEM TELA 2 AQUI >>
+![Print2](public/assets/img/prints/printsemana14.png)
