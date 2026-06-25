@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:  border-box;
+    font-family: 'Cinzel', serif
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background: radial-gradient(circle,rgba(143, 29, 20, 1) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 430px;
+    width: 100%;
+    background: #000000;
+    border-radius: 7px;
+    box-shadow: 0 5px 20px #000000;
+
+}
+
+.container .form {
+    padding: 2rem;
+
+}
+
+header {
+    color: #f89d13;
+}
+.form header {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.form h1{
+    color: #f89d13;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+
+.form input{
+    height: 60px;
+    width: 100%;
+    padding: 0 15px;
+    font-size: 17px;
+    margin-bottom: 1.3rem;
+    border: 1px solid #f89d13;
+    outline: none 
+} 
+
+.form input.button {
+    color: #fff;
+    background-color: #8f1d14;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 1.7rem;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+input {
+    border-radius: 10px;
+}
+
+.form input.button:hover {
+    background: #f89d13;
+}
+
+
+.signup {
+    font-size: 17px;
+    text-align: center;
+}
+
+.signup label {
+    color: #f89d13;
+    cursor: pointer
+}
+
+form input.button:hover{
+    background: #f89d13;
+}
+
+.signup {
+    font-size: 17px;
+    text-align: center;
+    color: #f89d13;
+}
+
+
+.signup label:hover{
+    text-decoration: underline;
+}
+
+
+.signup a:hover {
+    text-decoration: underline;
+}
+
+.signup a {
+    text-decoration: none; 
+    color: #f89d13;        
+}
+
+input, select, textarea, button {
+    font-family: inherit;
+    font-size: inherit; 
+}
+
+.form input {
+    font-family: Arial, sans-serif !important;
+}

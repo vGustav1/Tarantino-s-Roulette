@@ -488,12 +488,6 @@ footer {
     opacity: 0.8;
 }
 
-.filme-card-corner::before,
-.filme-card-corner::after {
-    content: '';
-    position: absolute;
-    background: #f89d13;
-}
 
 .filme-card-corner::before {
     top: 0;
