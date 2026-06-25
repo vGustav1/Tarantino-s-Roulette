@@ -578,15 +578,12 @@
       "email": "gustavofvieira5@gmail.com",
       "senha": "123",
       "favoritos": [
-        9,
-        10,
         8,
         5,
         6,
         7,
         1,
-        4,
-        2
+        4
       ],
       "role": "admin",
       "id": "lSNTHoTQAUc"
