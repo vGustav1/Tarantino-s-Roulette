@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
+/* ── CONFIGURAÇÕES GERAIS DO PAINEL ────────────────────────────────── */
+body {
+    background-color: #0a0a0a !important;
+    margin: 0;
+    font-family: "Cinzel", serif;
+    color: #f89d13;
+}
+
+/* Tipografia Temática */
+h1, h2, h3, h4, h5, h6, label, th {
+    font-family: "Cinzel", serif;
+    color: #f4c542 !important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+p, .text-muted {
+    font-family: "Cinzel", serif;
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* Links do Topo */
+a {
+    color: #f89d13 !important;
+    font-family: "Cinzel", serif;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+a:hover {
+    color: #ffffff !important;
+}
+
+/* ── CONTÊINERES E PAINÉIS DO CRUD ───────────────────────────────── */
+.painel-secao {
+    background: #111111 !important;
+    border: 1px solid #8f1d14 !important;
+    border-radius: 4px !important;
+    padding: 30px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+    position: relative;
+}
+
+.secao-titulo {
+    border-bottom: 2px solid #8f1d14 !important;
+    padding-bottom: 12px;
+    margin-bottom: 25px;
+    font-weight: 900;
+    text-shadow: 2px 2px 0 #000;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.secao-titulo i {
+    color: #8f1d14 !important;
+}
+
+/* Caixa de Vínculo Opcional (Sub-painel) */
+.bg-light.border.rounded {
+    background-color: #161616 !important;
+    border-color: #333333 !important;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+}
+
+/* ── FORMULÁRIOS E INPUTS CUSTOMIZADOS ───────────────────────────── */
+.form-label {
+    font-size: 0.85rem;
+    color: #f89d13 !important;
+}
+
+.form-control, .form-select {
+    background-color: #1a1a1a !important;
+    border: 1px solid #8f1d14 !important;
+    color: #ffffff !important;
+    border-radius: 2px !important;
+    font-family: 'Cinzel', serif;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: #222222 !important;
+    border-color: #f4c542 !important;
+    color: #ffffff !important;
+    box-shadow: 0 0 8px rgba(244, 197, 66, 0.3) !important;
+}
+
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.25) !important;
+    font-size: 0.8rem;
+}
+
+/* Estado desabilitado (ID Auto) */
+.form-control:disabled {
+    background-color: #0d0d0d !important;
+    border-color: #222222 !important;
+    color: rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Correção para o calendário nativo do input date */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(350deg); /* Torna o ícone vermelho/dourado */
+    cursor: pointer;
+}
+
+/* ── TABELAS DE DADOS (GRID) ─────────────────────────────────────── */
+.table-responsive {
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.table {
+    background-color: #111111 !important;
+    color: rgba(255, 255, 255, 0.8) !important;
+    border-color: #222222 !important;
+    margin-bottom: 0;
+}
+
+.table-dark {
+    background-color: #8f1d14 !important;
+}
+
+.table-dark th {
+    color: #f4c542 !important;
+    border-bottom: 2px solid #000 !important;
+    font-size: 0.85rem;
+}
+
+/* Efeito Zebrado e Hover na tabela */
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+    background-color: #161616 !important;
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.table-striped>tbody>tr:nth-of-type(even)>* {
+    background-color: #111111 !important;
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.table-hover>tbody>tr:hover>* {
+    background-color: #222222 !important;
+    color: #f4c542 !important;
+    box-shadow: inset 4px 0 0 #8f1d14; /* Barrinha vermelha discreta na linha selecionada */
+}
+
+/* Imagens dentro da tabela (Posters/Fotos) */
+.table img {
+    border: 1px solid #333;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    transition: transform 0.2s;
+}
+.table tr:hover img {
+    transform: scale(1.05);
+    border-color: #f4c542;
+}
+
+/* ── BOTÕES OPERACIONAIS (AÇÕES DO CRUD) ─────────────────────────── */
+.btn {
+    font-family: 'Cinzel', serif;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 2px !important;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+/* Inserir (Sucesso) */
+.btn-success {
+    background-color: transparent !important;
+    border: 1px solid #28a745 !important;
+    color: #28a745 !important;
+}
+.btn-success:hover {
+    background-color: #28a745 !important;
+    color: #0a0a0a !important;
+}
+
+/* Alterar (Aviso/Warning) */
+.btn-warning {
+    background-color: transparent !important;
+    border: 1px solid #f4c542 !important;
+    color: #f4c542 !important;
+}
+.btn-warning:hover {
+    background-color: #f4c542 !important;
+    color: #0a0a0a !important;
+}
+
+/* Excluir (Perigo/Danger) */
+.btn-danger {
+    background-color: transparent !important;
+    border: 1px solid #8f1d14 !important;
+    color: #8f1d14 !important;
+}
+.btn-danger:hover {
+    background-color: #8f1d14 !important;
+    color: #ffffff !important;
+}
+
+/* Limpar Campos (Secundário) */
+.btn-secondary {
+    background-color: transparent !important;
+    border: 1px solid #6c757d !important;
+    color: #6c757d !important;
+}
+.btn-secondary:hover {
+    background-color: #6c757d !important;
+    color: #ffffff !important;
+}
+
+/* Botão de Voltar no Topo */
+.btn-dark {
+    background-color: #8f1d14 !important;
+    border: 1px solid #8f1d14 !important;
+    color: #ffffff !important;
+}
+.btn-dark:hover {
+    background-color: transparent !important;
+    color: #8f1d14 !important;
+    border-color: #8f1d14 !important;
+}
+
+/* Badges / Etiquetas */
+.badge.bg-dark {
+    background-color: #8f1d14 !important;
+    color: #f4c542 !important;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 1px;
+}
+
+/* Alertas de Mensagem (Sucesso/Erro do Script) */
+.alert {
+    background-color: #111 !important;
+    border: 1px solid #8f1d14 !important;
+    color: #ffffff !important;
+    font-family: 'Cinzel', serif;
+    border-radius: 4px;
+}
+.alert-success { border-color: #28a745 !important; color: #28a745 !important; }
+.alert-danger { border-color: #8f1d14 !important; color: #8f1d14 !important; }
+.btn-close { filter: invert(1); } /* Torna o 'X' do fechar visível no fundo escuro */
